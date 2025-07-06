@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <h1 class="title3">MediTrack</h1>
+    <div class="wrappp">
+        <form id="SignupStatik">
+            <h1>Sign Up</h1>
+
+            <div class="input-box">
+                <input type="text" id="username" placeholder="Create Username" required>
+                <i class='bx bxs-user-circle'></i>
+            </div>
+
+            <div class="input-box">
+                <input type="password" id="entpassword" placeholder="Create Password" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+
+            <div class="input-box">
+                <input type="password" id="conpassword" placeholder="Confirm Password" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <p id="message" class="error-message"></p>
+            <input type="submit" class="submitbutton" value="Sign Up">
+
+            <div class="register-link">
+                <p>Already have an account? <a href="login.html">Login</a></p>
+            </div>
+        </form>
+    </div>
+    <script src="signup.js"></script>
+
+</body>
+</html>

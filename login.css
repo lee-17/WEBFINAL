@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #e6f2f8;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: .2;
+    z-index: -1;
+}
+.title2, .title3 {
+    font-family: 'Anton', sans-serif;
+    font-size: 56px;
+    font-weight: 600;
+    text-decoration: underline;
+    position: absolute;
+    color: #006d77;
+}
+
+.title2 {
+    top: 10%;
+}
+
+.title3 {
+    top: 5%;
+}
+
+.wrappp {
+    width: 420px;
+    background: #ffffff;
+    color: #003638;
+    border-radius: 10px;
+    padding: 35px 45px;
+    box-shadow: 0 0 20px rgba(0, 120, 130, 0.2);
+}
+
+.wrappp h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #006d77;
+}
+.error-message {
+    color: #d90429 ;
+    font-size: 14px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.wrappp .input-box {
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    position: relative;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid #89c2d9;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #003638;
+    padding: 20px 45px 20px 20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.input-box input::placeholder {
+    color: #a0a0a0;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #0081a7;
+}
+.wrappp .remembernforgot {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14.5px;
+    margin: 0 0 20px 0;
+    color: #003638;
+    padding-left: 10px;
+}
+
+.remembernforgot label input {
+    accent-color: #0081a7;
+    margin-right: 3px;
+}
+
+.remembernforgot a {
+    color: #0081a7;
+    text-decoration: none;
+}
+
+.remembernforgot a:hover {
+    text-decoration: underline;
+}
+.wrappp .submitbutton {
+    width: 100%;
+    height: 45px;
+    background: #0081a7;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #89c2d9;
+    cursor: pointer;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+    transition: background 0.3s ease;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.wrappp .submitbutton:hover {
+    background: #006d77;
+}
+
+.wrappp .register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a {
+    color: #0081a7;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
