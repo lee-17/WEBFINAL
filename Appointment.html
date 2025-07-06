@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Appointment | MediTrack</title>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="">
+</head>
+<body>
+
+  <header>
+    <div class="logo">MediTrack</div>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="appointments.html">Appointments</a></li>
+        <li><a href="medrecords.html">Medical Records</a></li>
+        <li><a href="about.html">About us</a></li>
+      </ul>
+    </nav>
+    <div class="pIcon">
+      <img src="IMAGES/profile-icon2.png" alt="Profile Icon">
+    </div>
+  </header>
+
+  <div class="container">
+    <h2>Book an Appointment</h2>
+    <p>Schedule your next visit.</p>
+    <form id="apf">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label for="reason">Reason for Appointment</label>
+        <input type="text" id="reason" placeholder="Enter reason" required>
+      </div>
+      <div class="form-group">
+        <label for="datetime">Time and Date</label>
+        <input type="datetime-local" id="datetime" required>
+      </div>
+      <div class="full-width">
+        <button type="submit">Confirm Appointment</button>
+      </div>
+    </form>
+  </div>
+  <script src="appoint.js"></script>
+</body>
+</html>

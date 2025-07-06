@@ -1,0 +1,160 @@
+body {
+ font-family: 'Josefin Sans', sans-serif;
+ margin: 0;
+ padding: 0;
+ min-height: 100vh;
+ background:
+   linear-gradient(rgba(137, 194, 217, 0.8), rgba(137, 194, 217, 0.8)),
+   url("../IMAGES/hospital.jpg") no-repeat center/cover;
+}
+
+header {
+  background-color: #0081a7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+.logo {
+  font-family: 'Anton', sans-serif;
+  font-size: 28px;
+  color: white;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  font-family: 'Anton', sans-serif;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+nav a:hover,
+nav a:focus,
+nav a:active {
+color: #003638;
+}
+.pIcon img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.welcome {
+ display: flex;
+ justify-content: center;
+ gap: 60px;
+ padding: 60px;
+ align-items: center;
+}
+.welcome-box {
+ width: 500px;
+ height: 300px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+}
+.welcome-box h2 {
+ font-size: 80px;
+ margin: 0;
+ color: white;
+}
+.right-box {
+ width: 500px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+.message-box {
+ color: white;
+ text-align: center;
+ font-size: 30px;
+ line-height: 1.5;
+ max-width: 100%;
+ margin-bottom: 20px;
+}
+
+.button-group {
+ display: flex;
+ justify-content: center;
+ gap: 65px;
+}
+.button {
+ background: #0081a7;
+ color: white;
+ padding: 16px 40px;
+ border-radius: 30px;
+ text-decoration: none;
+ font-size: 18px;
+}
+.button:hover,
+.button:focus,
+.button:active {
+ color: #003638;
+}
+.footer-bg {
+ width: 100%;
+ background-color:#0081a7 ;
+ color: white;
+ text-align: center;
+ padding: 20px 0px 10px 0px;
+ margin-top: 60px;
+}
+.footer-bg h2 {
+ font-size: 28px;
+ margin: 0px;
+ font-family: 'Anton', sans-serif;
+ letter-spacing: 1px;
+}
+.icons {
+ display: flex;
+ justify-content: center;
+ gap: 25px;
+ margin-bottom: 20px;
+}
+.icons img {
+ width: 40px;
+ height: 40px;
+ object-fit: contain;
+}
+.names {
+ font-size: 14px;
+ font-family: 'Josefin Sans', sans-serif;
+ opacity: 0.9;
+ margin: 0px;
+}
+footer {
+ text-align: center;
+ margin-top: 60px;
+ padding-bottom: 40px;
+}
+footer h2 {
+ font-size: 20px;
+ margin-bottom: 20px;
+ font-family: 'Anton', sans-serif;
+ letter-spacing: 1px;
+}
+.icons {
+ display: flex;
+ justify-content: center;
+ gap: 25px;
+ margin-bottom: 20px;
+}
+.icons img {
+ width: 40px;
+ height: 40px;
+ object-fit: contain;
+}
+.small-icon {
+  width: 10px;
+  height: 10px;
+}
+.names {
+ font-size: 14px;
+ opacity: 0.9;
+}
