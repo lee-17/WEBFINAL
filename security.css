@@ -8,38 +8,37 @@ body {
 header {
   background-color: #0081a7;
   display: flex;
-  padding: 20px 40px;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
 }
 
 .logo {
   font-family: 'Anton', sans-serif;
   font-size: 28px;
-  color: #006d77;
-  background-color: white;
-  padding: 10px 15px;
-  border-radius: 10px;
+  color: white;
 }
 
 nav ul {
-  display: flex;
-  gap: 15px;
   list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
 }
 
-nav li a {
+nav a {
   font-family: 'Anton', sans-serif;
+  font-size: 18px;
   color: white;
   text-decoration: none;
-  padding: 8px 12px;
-  border-radius: 5px;
+  transition: color 0.3s;
 }
 
-nav li a:hover {
-  background-color: white;
-  color: #003638;
-  border: 2px solid #003638;
+nav a:hover,
+nav a:focus,
+nav a:active {
+color: #003638;
 }
 
 .pIcon img {
@@ -73,14 +72,14 @@ nav li a:hover {
   font-size: 14px;
   padding: 10px 15px;
   margin: 0 5px;
-  border-radius: 5px;
   transition: 0.2s;
   border: 2px solid transparent;
 }
 
 
 .sidebar a.tab:hover {
-  background-color: #b3d9f2;
+  background-color: #003638;
+  color: white;
 }
 
 .sidebar a.tab.active {
@@ -105,6 +104,7 @@ nav li a:hover {
   border-radius: 12px;
   padding: 30px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding-left: 2cm;
 }
 
 .profile-section h2 {
@@ -138,7 +138,7 @@ input:disabled,
 textarea:disabled {
   background: none;
   border: none;
-  color: #000;
+  color: #555;
   opacity: 0.85;
 }
 
@@ -200,4 +200,46 @@ hr {
   .buttons {
     flex-direction: column;
   }
+}
+
+.names {
+ font-size: 14px;
+ opacity: 0.9;
+ margin: 0px;
+}
+
+footer {
+ width: 100%;
+ background-color:#0081a7;
+ color: white;
+ text-align: center;
+ padding: 20px 0px 10px 0px;
+ margin-top: 60px;
+}
+
+footer h2 {
+ font-size: 20px;
+ margin: 0px;
+ margin-bottom: 10px;
+ font-family: 'Anton', sans-serif;
+ letter-spacing: 2px;
+ font-weight: 300;
+}
+
+.icons {
+ display: flex;
+ justify-content: center;
+ gap: 25px;
+ margin-bottom: 20px;
+}
+
+.icons img {
+ width: 40px;
+ height: 40px;
+ object-fit: contain;
+}
+
+footer p {
+ font-size: 14px;
+ opacity: 0.9;
 }

@@ -66,13 +66,13 @@ color: #003638;
 }
 
 .categ:hover {
-    transition: background-color 0.2s, color 0.2s, border 0.2s;
-    background-color: #0081a7;
+    transition: background-color 0.3s ease;
+    background-color: #003638;
     color: white;
 }
 
 .categ:active {
-    background-color: #0081a7;
+    background-color: #003638;
     color: white;
 }
 

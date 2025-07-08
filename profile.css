@@ -86,18 +86,18 @@ color: #003638;
   font-size: 14px;
   padding: 10px 12px;
   width: 100%;
-  transition: background-color 0.2s, color 0.2s, border 0.2s;
+  transition: background-color 0.3s ease;
   border: 2px solid transparent;
 }
 
 .sidebar a.tab:hover,
 .sidebar a.tab:focus {
-  background-color: #0081a7;
+  background-color: #003638;
   color: white;
 }
 
 .sidebar a.tab.active {
-  background-color: #0081a7;
+  background-color: #003638;
   color: white;
 }
 
@@ -183,7 +183,7 @@ input:disabled,
 textarea:disabled {
   background: none;
   border: none;
-  color: #000;
+  color: #555;
   opacity: 0.85;
 }
 

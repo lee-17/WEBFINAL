@@ -85,7 +85,7 @@ color: #003638;
 }
 
 .message-box {
- color: rgb(0, 0, 0);
+ color: #003638;
  text-align: center;
  font-size: 30px;
  line-height: 1.5;
@@ -108,18 +108,19 @@ color: #003638;
  border-radius: 30px;
  text-decoration: none;
  font-size: 18px;
+ transition: background-color 0.3s ease
 }
 
 .button:active {
- color: #003638;
+ background: #003638;
 }
 
 .button:hover {
-  color: #003638;
+  background: #003638;
 }
 
 .button:focus {
-  color: #003638;
+  background: #003638;
 }
 
 
