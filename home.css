@@ -3,9 +3,7 @@ body {
  margin: 0;
  padding: 0;
  min-height: 100vh;
- background:
-   linear-gradient(rgba(137, 194, 217, 0.8), rgba(137, 194, 217, 0.8)),
-   url("../IMAGES/hospital.jpg") no-repeat center/cover;
+ background: url(images/hospital.jpg) no-repeat center fixed;
 }
 
 header {
@@ -44,6 +42,11 @@ color: #003638;
   height: 40px;
   border-radius: 50%;
 }
+
+.bgcolor {
+  background-color: rgb(0, 129, 167, 0.3);;
+}
+
 .welcome {
  display: flex;
  justify-content: center;
@@ -71,10 +74,11 @@ color: #003638;
  align-items: center;
 }
 .message-box {
- color: white;
+ color: rgb(0, 0, 0);
  text-align: center;
  font-size: 30px;
  line-height: 1.5;
+ font-weight: 600;
  max-width: 100%;
  margin-bottom: 20px;
 }
@@ -106,8 +110,9 @@ color: #003638;
  margin-top: 60px;
 }
 .footer-bg h2 {
- font-size: 28px;
+ font-size: 20px;
  margin: 0px;
+ margin-bottom: 10px;
  font-family: 'Anton', sans-serif;
  letter-spacing: 1px;
 }
@@ -118,8 +123,8 @@ color: #003638;
  margin-bottom: 20px;
 }
 .icons img {
- width: 40px;
- height: 40px;
+ width: 30px;
+ height: 30px;
  object-fit: contain;
 }
 .names {
