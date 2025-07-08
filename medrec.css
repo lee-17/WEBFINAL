@@ -62,10 +62,11 @@ color: #003638;
     margin: 5px;
     font-family: 'Anton',sans-serif;
     font-size: 20px;
-    color: black;
+    color: #003638;
 }
 
 .categ:hover {
+    transition: background-color 0.2s, color 0.2s, border 0.2s;
     background-color: #0081a7;
     color: white;
 }
@@ -156,6 +157,7 @@ footer h2 {
     margin-bottom: 20px;
     font-family: 'Anton', sans-serif;
     letter-spacing: 1px;
+    font-weight: 300;
 }
 
 .icons {

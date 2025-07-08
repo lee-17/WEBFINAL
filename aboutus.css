@@ -53,73 +53,36 @@ color: #003638;
   border-radius: 50%;
 }
 
-.welcome {
- display: flex;
- justify-content: center;
- gap: 60px;
- padding-top: 2cm;
- padding-bottom: 1cm;
- align-items: center;
+
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2.7cm;
+  padding-bottom: 0.5cm;
+  gap: 40px;
 }
 
-.welcome-box {
- display: flex;
- align-items: center;
- justify-content: center;
- text-align: center;
+.about-text {
+  color: black;
+  font-size: 27px;
+  font-weight: 600;
+  max-width: 500px;
 }
 
-.welcome-box h2 {
-  font-weight: 900;
-  font-size: 100px;
-  line-height: 2.8cm;
+.about-image img {
+  max-width: 100%;
+  width: 550px;
+  height: auto;
+  border-radius: 10px;
+  margin-left: 2cm;
+  box-shadow: 0 0 5px rgba(0, 129, 167, 0.3);
+}
+
+.about-text h2 {
   color: #0081a7;
-}
-
-.right-box {
- width: 500px;
- display: flex;
- flex-direction: column;
- align-items: center;
- margin-left: 5cm;
-}
-
-.message-box {
- color: rgb(0, 0, 0);
- text-align: center;
- font-size: 30px;
- line-height: 1.5;
- font-weight: 600;
- max-width: 100%;
- margin-bottom: 20px;
-}
-
-.button-group {
-  margin-top: 20px;
- display: flex;
- justify-content: center;
- gap: 65px;
-}
-
-.button {
- background: #0081a7;
- color: white;
- padding: 16px 40px;
- border-radius: 30px;
- text-decoration: none;
- font-size: 18px;
-}
-
-.button:active {
- color: #003638;
-}
-
-.button:hover {
-  color: #003638;
-}
-
-.button:focus {
-  color: #003638;
+  font-size: 40px;
+  margin-bottom: 15px;
 }
 
 
