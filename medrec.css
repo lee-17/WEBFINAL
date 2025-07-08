@@ -1,0 +1,182 @@
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #e6f2f8;
+}
+
+header {
+  background-color: #0081a7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.logo {
+  font-family: 'Anton', sans-serif;
+  font-size: 28px;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  font-family: 'Anton', sans-serif;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover,
+nav a:focus,
+nav a:active {
+color: #003638;
+}
+
+.pIcon img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+
+.filter {
+    background-color: #d2e7f8;
+    width: 7cm;
+    height: 11.7cm;
+    padding-top: 2cm;
+    text-align: center;
+}
+
+.categ {
+    background-color: #d2e7f8;
+    border-style: none;
+    width: 6.5cm;
+    padding: 15px;
+    margin: 5px;
+    font-family: 'Anton',sans-serif;
+    font-size: 20px;
+    color: black;
+}
+
+.categ:hover {
+    background-color: #0081a7;
+    color: white;
+}
+
+.categ:active {
+    background-color: #0081a7;
+    color: white;
+}
+
+.documents {
+    display: flex;
+}
+
+.docs {
+    margin: 1cm 2cm;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.file {
+    margin-right: 20px;
+    border-radius: 10px;
+    border: solid #d2e7f8;
+    width: 5cm;
+    height: 4cm;
+
+    background-color: white;
+    padding: 20px 20px;
+    box-shadow: 15px;
+
+    text-align: center;
+    word-wrap: normal;
+}
+
+.file h1 {
+    color: #0081a7;
+    margin-bottom: 13px;
+}
+
+.hidden {
+    display: none;
+}
+
+.footer-bg {
+    width: 100%;
+    background-color:#0081a7 ;
+    color: white;
+    text-align: center;
+    padding: 20px 0px 10px 0px;
+}
+
+.footer-bg h2 {
+    font-size: 20px;
+    margin: 0px;
+    margin-bottom: 10px;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 1px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.icons img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.names {
+    font-size: 14px;
+    font-family: 'Josefin Sans', sans-serif;
+    opacity: 0.9;
+    margin: 0px;
+}
+
+footer {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+footer h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 1px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.icons img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.small-icon {
+    width: 10px;
+    height: 10px;
+}
+
+.names {
+    font-size: 14px;
+    opacity: 0.9;
+}
