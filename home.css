@@ -126,6 +126,7 @@ color: #003638;
 
 .bgcolor {
   background-color: rgb(210, 231, 248, 0.7);;
+  height: 100%;
 }
 
 .names {
@@ -169,3 +170,11 @@ footer p {
  font-size: 14px;
  opacity: 0.9;
 }
+
+/* change yung mga "px" formats into other formats para dynamic regardless of screen sizes. (nasisira siya on my end - yung tropa ni leanne)
+
+em - text
+% - image, backgrounds, divs, or others in general
+
+yung hover when it comes to Profile section, di siya consistent. (sa home walang hover, pero sa profile meron)
+*/
