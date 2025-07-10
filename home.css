@@ -1,32 +1,53 @@
+/* ===== GENERAL ===== */
 body {
- font-family: 'Josefin Sans', sans-serif;
- margin: 0;
- padding: 0;
- min-height: 100vh;
- background: url(images/hospital.jpg) no-repeat center fixed;
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  min-height: 100vh;
+  background: url(hospital.jpg) no-repeat center fixed;
+  background-size: cover;
+  z-index: 0;
 }
 
+.bgcolor {
+  background-color: rgba(255, 255, 255, 0.85);
+  position: relative;
+  width: 100%;
+  min-height: 85vh;
+  z-index: 0;
+}
+
+/* ===== HEADER ===== */
 header {
-  background-color: #0081a7;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   padding: 20px 40px;
+  background-color: #0081a7;
 }
 
 .logo {
   font-family: 'Anton', sans-serif;
   font-size: 28px;
   color: white;
+  flex: 0 0 auto;
+}
+
+nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 nav ul {
-  list-style: none;
   display: flex;
+  list-style: none;
   gap: 25px;
   margin: 0;
   padding: 0;
 }
+
 nav a {
   font-family: 'Anton', sans-serif;
   font-size: 18px;
@@ -35,16 +56,14 @@ nav a {
   transition: color 0.3s;
 }
 
+nav a:hover,
+nav a:focus,
 nav a:active {
-color: #003638;
+  color: #003638;
 }
 
-nav a:hover {
-color: #003638;
-}
-
-nav a:focus {
-color: #003638;
+.pIcon {
+  flex: 0 0 auto;
 }
 
 .pIcon img {
@@ -53,20 +72,22 @@ color: #003638;
   border-radius: 50%;
 }
 
+
+/* ===== WELCOME SECTION ===== */
 .welcome {
- display: flex;
- justify-content: center;
- gap: 60px;
- padding-top: 2cm;
- padding-bottom: 1cm;
- align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  align-items: center;
 }
 
 .welcome-box {
- display: flex;
- align-items: center;
- justify-content: center;
- text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .welcome-box h2 {
@@ -74,107 +95,170 @@ color: #003638;
   font-size: 100px;
   line-height: 2.8cm;
   color: #0081a7;
+  text-align: center;
 }
 
 .right-box {
- width: 500px;
- display: flex;
- flex-direction: column;
- align-items: center;
- margin-left: 5cm;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 3vw;
 }
 
 .message-box {
- color: #003638;
- text-align: center;
- font-size: 30px;
- line-height: 1.5;
- font-weight: 600;
- max-width: 100%;
- margin-bottom: 20px;
+  color: #003638;
+  text-align: center;
+  font-size: 30px;
+  line-height: 1.5;
+  font-weight: 600;
+  max-width: 100%;
+  margin-bottom: 20px;
 }
 
 .button-group {
   margin-top: 20px;
- display: flex;
- justify-content: center;
- gap: 65px;
+  display: flex;
+  justify-content: center;
+  gap: 65px;
 }
 
 .button {
- background: #0081a7;
- color: white;
- padding: 16px 40px;
- border-radius: 30px;
- text-decoration: none;
- font-size: 18px;
- transition: background-color 0.3s ease
+  background: #0081a7;
+  color: white;
+  padding: 16px 40px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  text-align: center;
 }
 
-.button:active {
- background: #003638;
-}
-
-.button:hover {
-  background: #003638;
-}
-
+.button:hover,
+.button:active,
 .button:focus {
   background: #003638;
 }
 
-
-.bgcolor {
-  background-color: rgb(210, 231, 248, 0.7);;
-  height: 100%;
-}
-
-.names {
- font-size: 14px;
- opacity: 0.9;
- margin: 0px;
-}
-
+/* ===== FOOTER ===== */
 footer {
- width: 100%;
- background-color:#0081a7;
- color: white;
- text-align: center;
- padding: 20px 0px 10px 0px;
- margin-top: 60px;
+  width: 100%;
+  background-color: #0081a7;
+  color: white;
+  text-align: center;
+  padding: 20px 0 10px 0;
+  position: relative;
 }
 
 footer h2 {
- font-size: 20px;
- margin: 0px;
- margin-bottom: 10px;
- font-family: 'Anton', sans-serif;
- letter-spacing: 2px;
- font-weight: 300;
+  font-size: 20px;
+  margin: 0 0 10px 0;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 2px;
+  font-weight: 300;
 }
 
 .icons {
- display: flex;
- justify-content: center;
- gap: 25px;
- margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 20px;
 }
 
 .icons img {
- width: 40px;
- height: 40px;
- object-fit: contain;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
 }
 
 footer p {
- font-size: 14px;
- opacity: 0.9;
+  font-size: 14px;
+  opacity: 0.9;
 }
 
-/* change yung mga "px" formats into other formats para dynamic regardless of screen sizes. (nasisira siya on my end - yung tropa ni leanne)
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px;
+  }
 
-em - text
-% - image, backgrounds, divs, or others in general
+  .logo {
+    font-size: 24px;
+    order: -1;
+  }
 
-yung hover when it comes to Profile section, di siya consistent. (sa home walang hover, pero sa profile meron)
-*/
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  nav {
+    width: 100%;
+    text-align: center;
+  }
+
+  .pIcon {
+    margin-top: 10px;
+  }
+
+  .welcome {
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    text-align: left;
+  }
+
+  .welcome-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.welcome-box h2 {
+  font-size: 60px;
+  line-height: 1.5em;
+  text-align: center; /* ✅ force center text */
+  margin: 0 auto;
+}
+
+  .right-box {
+    width: 90%;
+    margin-left: 0;
+    align-items: center;
+  }
+
+  .message-box {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .button-group {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .button {
+    width: 80%;
+    padding: 14px;
+    font-size: 16px;
+  }
+
+  .icons img {
+    width: 30px;
+    height: 30px;
+  }
+
+  footer {
+    position: relative;
+    padding: 20px 0;
+  }
+}
