@@ -1,95 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Home | MediTrack</title>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="medrec.css">
+  <meta charset="UTF-8">
+  <title>Medical Records | MediTrack</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="medrec.css">
 </head>
 <body>
+  <div class="page-wrapper">
     <header>
-        <div class="logo">MediTrack</div>
-        <nav>
-            <ul>
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="Appointment.html">Appointments</a></li>
-                <li><a href="Medrec.html">Medical Records</a></li>
-                <li><a href="Aboutus.html">About Us</a></li>
-            </ul>
-        </nav>
-        <div class="pIcon">
-            <a href="profile.html">
-            <img src="images/profile-icon2.png" alt="Profile Icon">
-            </a>
-        </div>
-    </header>
+  <div class="logo">MediTrack</div>
+
+  <nav class="main-nav">
+    <ul>
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="Appointment.html">Appointments</a></li>
+      <li><a href="Medrec.html">Medical Records</a></li>
+      <li><a href="Aboutus.html">About Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="pIcon">
+    <a href="profile.html">
+      <img src="profile-icon2.png" alt="Profile Icon" />
+    </a>
+  </div>
+</header>
+
 
     <section class="documents">
-    <div class= "filter">
-        <div class="butfilter">
-            <button class="categ" data-filter="all" onclick="filterfiles('e')">DASHBOARD</button>
-            <button class="categ" data-filter="labtest" onclick="filterfiles('e')">LAB RESULTS</button>
-            <button class="categ" data-filter="xray" onclick="filterfiles('e')">X-RAYS</button>
-            <button class="categ" data-filter="vaccine" onclick="filterfiles('e')">VACCINATION</buttosn>
-            <button class="categ" data-filter="meds" onclick="filterfiles('e')">PRESCRIPTION</button>
-        </div>
-    </div>
-    <div class="docs">
-        <div class="file">
-            <div class="labtest">
-                <h1>January Blood Work</h1>
-                Blood pressure stable<br>
-                Minor vitamin D deficiency
-            </div>
-        </div>
+      <div class="filter">
+        <button class="categ" data-filter="all">DASHBOARD</button>
+        <button class="categ" data-filter="labtest">LAB RESULTS</button>
+        <button class="categ" data-filter="xray">X-RAYS</button>
+        <button class="categ" data-filter="vaccine">VACCINATION</button>
+        <button class="categ" data-filter="meds">PRESCRIPTION</button>
+      </div>
 
-        <div class="file">
-            <div class="labtest">
-                <h1>February Blood Work</h1>
-                Cholesterol within normal range<br>
-                Recommend healty diet
-            </div>
+      <div class="docs">
+        <div class="file labtest">
+          <h1>January Blood Work</h1>
+          Blood pressure stable<br>
+          Minor vitamin D deficiency
         </div>
-
-        <div class="file">
-            <div class="xray">
-                <h1>March X-Ray</h1>
-                No fractures or abnormalities noted in the chest
-            </div>
+        <div class="file labtest">
+          <h1>February Blood Work</h1>
+          Cholesterol within normal range<br>
+          Recommend healthy diet
         </div>
-
-        <div class="file">
-            <div class="vaccine">
-                <h1>April Vaccination</h1>
-                BioFlu, Tetanus booster
-            </div>
+        <div class="file xray">
+          <h1>March X-Ray</h1>
+          No fractures or abnormalities noted in the chest
         </div>
-
-        <div class="file">
-            <div class="vaccine">
-                <h1>May Vaccination</h1>
-                PPSV23
-            </div>
+        <div class="file vaccine">
+          <h1>April Vaccination</h1>
+          BioFlu, Tetanus booster
         </div>
-
-        <div class="file">
-            <div class="meds">
-                <h1>June Prescription</h1>
-                Biogesic, Fluimucil
-            </div>
+        <div class="file vaccine">
+          <h1>May Vaccination</h1>
+          PPSV23
         </div>
-    </div>
+        <div class="file meds">
+          <h1>June Prescription</h1>
+          Biogesic, Fluimucil
+        </div>
+      </div>
     </section>
 
-    <footer class="footer-bg">
-        <h2>Social Media</h2>
-        <div class="icons">
-            <img src="images/facebook-logo-circle-white.png" alt="Icon 1">
-            <img src="images/twittericon2.png" alt="Icon 2" class="small-icon">
-            <img src="images/instaicon2.png" alt="Icon 3" class="small-icon">
-        </div>
-        <p class="names">Baccay • Faminialagao • Fausto • Tatad</p>
+    <footer>
+      <h2>Social Media</h2>
+      <div class="icons">
+        <img src="facebook-logo-circle-white.png" alt="Facebook">
+        <img src="twittericon2.png" alt="Twitter">
+        <img src="instaicon2.png" alt="Instagram">
+      </div>
+      <p class="names">Baccay • Faminialagao • Fausto • Tatad</p>
     </footer>
-    <script src="medrec.js"></script>
+  </div>
+
+  <script src="medrec.js"></script>
 </body>
 </html>
