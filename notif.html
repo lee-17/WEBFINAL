@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Notification | MediTrack</title>
+  <link rel="stylesheet" href="notif.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="logo">MediTrack</div>
+    <nav>
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Appointment.html">Appointments</a></li>
+        <li><a href="Medrec.html">Medical Records</a></li>
+        <li><a href="Aboutus.html">About Us</a></li>
+      </ul>
+    </nav>
+    <div class="pIcon">
+      <a href="profile.html">
+        <img src="profile-icon2.png" alt="Profile">
+      </a>
+    </div>
+  </header>
+
+  <div class="container">
+    <main class="main-notif-container">
+      <aside class="sidebar">
+        <a href="profile.html" class="tab">PROFILE</a>
+        <a href="security.html" class="tab">SECURITY</a>
+        <a href="notif.html" class="tab active">NOTIFICATION</a>
+        <a href="login.html" class="logout">LOGOUT</a>
+      </aside>
+
+      <section class="notif-section">
+        <h2>Confirmed Appointments</h2>
+        <div class="notif-list" id="notifList">
+          <!-- Appointment cards inserted by JS -->
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <h2>Social Media</h2>
+    <div class="icons">
+      <img src="facebook-logo-circle-white.png" alt="Facebook">
+      <img src="twittericon2.png" alt="Twitter">
+      <img src="instaicon2.png" alt="Instagram">
+    </div>
+    <p>Baccay • Faminialagao • Fausto • Tatad</p>
+  </footer>
+
+  <script src="notif.js"></script>
+</body>
+</html>
