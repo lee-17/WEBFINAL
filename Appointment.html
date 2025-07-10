@@ -8,55 +8,56 @@
   <link rel="stylesheet" href="appoint.css">
 </head>
 <body>
-
-  <header>
-    <div class="logo">MediTrack</div>
-    <nav>
-      <ul>
-        <li><a href="Home.html">Home</a></li>
-        <li><a href="Appointment.html">Appointments</a></li>
-        <li><a href="Medrec.html">Medical Records</a></li>
-        <li><a href="Aboutus.html">About Us</a></li>
+  <div class="page-wrapper">
+    <header>
+      <div class="logo">MediTrack</div>
+      <nav>
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="Appointment.html">Appointments</a></li>
+          <li><a href="Medrec.html">Medical Records</a></li>
+          <li><a href="Aboutus.html">About Us</a></li>
         </ul>
-    </nav>
-    <div class="pIcon">
-      <a href="profile.html">
-      <img src="images/profile-icon2.png" alt="Profile Icon">
-      </a>
-    </div>
-  </header>
+      </nav>
+      <div class="pIcon">
+        <a href="profile.html">
+          <img src="profile-icon2.png" alt="Profile Icon">
+        </a>
+      </div>
+    </header>
 
-  <div class="container">
-    <h2>Book an Appointment</h2>
-    <p>Schedule your next visit.</p>
-    <form id="apf">
-      <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" id="name" placeholder="Enter your name" required>
+    <div class="container">
+      <h2>Book an Appointment</h2>
+      <p>Schedule your next visit.</p>
+      <form id="apf">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label for="reason">Reason for Appointment</label>
+          <input type="text" id="reason" placeholder="Enter reason" required>
+        </div>
+        <div class="form-group">
+          <label for="datetime">Time and Date</label>
+          <input type="datetime-local" id="datetime" required>
+        </div>
+        <div class="full-width">
+          <button type="submit">Confirm Appointment</button>
+        </div>
+      </form>
+    </div>
+
+    <footer>
+      <h2>Social Media</h2>
+      <div class="icons">
+        <img src="facebook-logo-circle-white.png" alt="Facebook">
+        <img src="twittericon2.png" alt="Twitter">
+        <img src="instaicon2.png" alt="Instagram">
       </div>
-      <div class="form-group">
-        <label for="reason">Reason for Appointment</label>
-        <input type="text" id="reason" placeholder="Enter reason" required>
-      </div>
-      <div class="form-group">
-        <label for="datetime">Time and Date</label>
-        <input type="datetime-local" id="datetime" required>
-      </div>
-      <div class="full-width">
-        <button type="submit">Confirm Appointment</button>
-      </div>
-    </form>
+      <p>Baccay • Faminialagao • Fausto • Tatad</p>
+    </footer>
   </div>
-
-  <footer>
-    <h2>Social Media</h2>
-    <div class="icons">
-      <img src="images/facebook-logo-circle-white.png" alt="Facebook">
-      <img src="images/twittericon2.png" alt="Twitter">
-      <img src="images/instaicon2.png" alt="Instagram">
-    </div>
-    <p>Baccay • Faminialagao • Fausto • Tatad</p>
-  </footer>
 
   <script src="appoint.js"></script>
 </body>
