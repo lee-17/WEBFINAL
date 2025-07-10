@@ -1,30 +1,48 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Josefin Sans', sans-serif;
   background-color: #e6f2f8;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
   background-color: #0081a7;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  color: white;
   padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: nowrap;
 }
 
 .logo {
   font-family: 'Anton', sans-serif;
   font-size: 28px;
   color: white;
+  flex-shrink: 0;
+  text-align: left;
+}
+
+nav {
+  flex-grow: 1;
 }
 
 nav ul {
   list-style: none;
   display: flex;
   gap: 25px;
-  margin: 0;
-  padding: 0;
+  justify-content: center;
+  align-items: center;
 }
 
 nav a {
@@ -33,12 +51,20 @@ nav a {
   color: white;
   text-decoration: none;
   transition: color 0.3s;
+  white-space: nowrap;
 }
 
 nav a:hover,
 nav a:focus,
 nav a:active {
-color: #003638;
+  color: #003638;
+}
+
+.pIcon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .pIcon img {
@@ -47,42 +73,47 @@ color: #003638;
   border-radius: 50%;
 }
 
+/* Main Container - Ensures consistent width and centering */
+.container {
+  flex: 1; /* Allows it to grow vertically */
+  padding: 40px;
+  max-width: 1200px; /* Adjust this to 960px if you prefer a narrower main content area */
+  width: 100%;
+  margin: auto; /* Centers the container horizontally */
+}
+
+/* Main container & sidebar layout */
 .main-profile-container {
   display: flex;
-  padding: 40px;
   gap: 30px;
+  flex: 1; /* Allows it to take available vertical space within .container */
 }
 
 .sidebar {
   width: 200px;
   background-color: #d2e7f8;
-  border-radius: 12px;
   padding: 30px 20px;
+  border-radius: 12px;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar a.tab {
-  display: block;
-  background: none;
   text-decoration: none;
-  color: #003638;
   font-weight: bold;
   font-size: 14px;
-  padding: 10px 15px;
-  margin: 0 5px;
-  transition: 0.2s;
-  border: 2px solid transparent;
+  color: #003638;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  text-align: center;
 }
 
-
+.sidebar a.tab.active,
 .sidebar a.tab:hover {
-  background-color: #003638;
-  color: white;
-}
-
-.sidebar a.tab.active {
   background-color: #003638;
   color: white;
 }
@@ -98,24 +129,18 @@ color: #003638;
   margin-top: auto;
 }
 
+/* Profile Section (used for security content here) */
 .profile-section {
   flex: 1;
   background-color: white;
   border-radius: 12px;
   padding: 30px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  padding-left: 2cm;
 }
 
 .profile-section h2 {
   font-size: 22px;
   margin-bottom: 20px;
-}
-
-.profile-section h3 {
-  margin-top: 30px;
-  margin-bottom: 10px;
-  font-size: 18px;
 }
 
 .profile-section label {
@@ -176,70 +201,115 @@ textarea:not(:disabled) {
   background-color: #dc3545;
 }
 
-hr {
-  margin: 30px 0;
-  border: none;
-  border-top: 2px solid #0081a7;
+footer {
+  background-color: #0081a7;
+  color: white;
+  text-align: center;
+  padding: 20px 0 10px 0;
+  margin-top: auto;
+}
+
+footer h2 {
+  font-family: 'Anton', sans-serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 10px;
+}
+
+.icons img {
+  width: 40px;
+  height: 40px;
+}
+
+footer p {
+  font-size: 14px;
+  opacity: 0.9;
 }
 
 @media (max-width: 768px) {
-  .main-profile-container {
+  header {
     flex-direction: column;
+    padding: 20px 20px;
+  }
+
+  .logo {
+    order: -1; /* Puts logo at the top on mobile */
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  nav ul {
+    order: 1; /* Navigation below the logo */
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+  }
+
+  nav a {
+    font-size: 16px;
+  }
+
+  .pIcon {
+    order: 2; /* Profile icon below navigation */
+    margin-top: 10px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .container {
+    padding: 20px; /* Reduced padding for mobile container */
+  }
+
+  .main-profile-container {
+    flex-direction: column; /* Stacks sidebar and content vertically */
   }
 
   .sidebar {
     width: 100%;
-    flex-direction: row;
+    flex-direction: row; /* Sidebar tabs in a row */
     justify-content: space-around;
+    padding: 10px;
+    border-radius: 0;
+    box-shadow: none;
+    flex-wrap: wrap; /* Allows tabs to wrap */
+  }
+
+  .sidebar a.tab {
+    flex: 1; /* Tabs take equal space */
+    text-align: center;
+    font-size: 13px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid transparent;
+  }
+
+  .sidebar a.logout {
+    flex: none; /* Logout button is not flexible in width with tabs */
+    width: 140px;
+    margin: 15px auto 0;
+    border-radius: 12px;
+    font-size: 14px;
+    padding: 8px 0;
   }
 
   .profile-section {
     margin-top: 20px;
+    padding: 20px;
   }
 
   .buttons {
-    flex-direction: column;
+    flex-direction: column; /* Buttons stack vertically */
   }
-}
 
-.names {
- font-size: 14px;
- opacity: 0.9;
- margin: 0px;
-}
-
-footer {
- width: 100%;
- background-color:#0081a7;
- color: white;
- text-align: center;
- padding: 20px 0px 10px 0px;
- margin-top: 60px;
-}
-
-footer h2 {
- font-size: 20px;
- margin: 0px;
- margin-bottom: 10px;
- font-family: 'Anton', sans-serif;
- letter-spacing: 2px;
- font-weight: 300;
-}
-
-.icons {
- display: flex;
- justify-content: center;
- gap: 25px;
- margin-bottom: 20px;
-}
-
-.icons img {
- width: 40px;
- height: 40px;
- object-fit: contain;
-}
-
-footer p {
- font-size: 14px;
- opacity: 0.9;
+  .buttons button {
+    font-size: 14px;
+  }
 }
