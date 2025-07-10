@@ -1,21 +1,38 @@
-body {
+html, body {
+  height: 100%;
+  margin: 0;
   font-family: 'Josefin Sans', sans-serif;
   background-color: #e6f2f8;
-  margin: 0;
 }
 
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
 header {
   background-color: #0081a7;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .logo {
   font-family: 'Anton', sans-serif;
   font-size: 28px;
   color: white;
+  flex: 0 0 auto;
+}
+
+nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 nav ul {
@@ -24,6 +41,7 @@ nav ul {
   gap: 25px;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
 }
 
 nav a {
@@ -37,7 +55,11 @@ nav a {
 nav a:hover,
 nav a:focus,
 nav a:active {
-color: #003638;
+  color: #003638;
+}
+
+.pIcon {
+  flex: 0 0 auto;
 }
 
 .pIcon img {
@@ -46,14 +68,16 @@ color: #003638;
   border-radius: 50%;
 }
 
+/* FORM CONTAINER */
 .container {
-  background-color: #ffffff;
   padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
   width: 90%;
   max-width: 800px;
   margin: 50px auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  flex-grow: 0;
 }
 
 h2 {
@@ -71,7 +95,7 @@ p {
 
 form {
   display: grid;
- grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto;
   column-gap: 20px;
   row-gap: 20px;
   align-items: end;
@@ -86,7 +110,6 @@ form {
 label {
   font-weight: bold;
   color: #0081a7;
-  display: block;
 }
 
 input {
@@ -126,52 +149,78 @@ button:hover {
   background-color: #005f6b;
 }
 
-.pIcon img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
-
-
-.names {
- font-size: 14px;
- opacity: 0.9;
- margin: 0px;
-}
-
+/* FOOTER */
 footer {
- width: 100%;
- background-color:#0081a7;
- text-align: center;
- padding: 20px 0px 10px 0px;
- margin-top: 2.9cm;
+  width: 100%;
+  background-color: #0081a7;
+  color: white;
+  text-align: center;
+  padding: 20px 0 10px 0;
+  margin-top: auto;
+  position: relative;
 }
 
 footer h2 {
-  color: white;
- font-size: 20px;
- margin: 0px;
- margin-bottom: 10px;
- font-family: 'Anton', sans-serif;
- letter-spacing: 2px;
- font-weight: 300;
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 2px;
+  font-weight: 300;
 }
 
 .icons {
- display: flex;
- justify-content: center;
- gap: 25px;
- margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 20px;
 }
 
 .icons img {
- width: 40px;
- height: 40px;
- object-fit: contain;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
 }
 
 footer p {
-  color: white;
- font-size: 14px;
- opacity: 0.9;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    width: 100%;
+    justify-content: center;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .pIcon {
+    margin-top: 10px;
+  }
+
+  form {
+    grid-template-columns: 1fr;
+  }
+
+  .full-width {
+    grid-column: span 1;
+  }
+
+  button {
+    width: 100%;
+  }
 }
