@@ -140,22 +140,23 @@ nav a:active {
   background: #003638;
 }
 
-/* ===== FOOTER ===== */
+/* FOOTER */
 footer {
   width: 100%;
   background-color: #0081a7;
-  color: white;
   text-align: center;
   padding: 20px 0 10px 0;
+  margin-top: auto;
   position: relative;
 }
 
 footer h2 {
   font-size: 20px;
-  margin: 0 0 10px 0;
+  margin-bottom: 10px;
   font-family: 'Anton', sans-serif;
   letter-spacing: 2px;
   font-weight: 300;
+  color: white;
 }
 
 .icons {
@@ -174,6 +175,7 @@ footer h2 {
 footer p {
   font-size: 14px;
   opacity: 0.9;
+  color: white;
 }
 
 /* ===== RESPONSIVE ===== */
@@ -255,10 +257,5 @@ footer p {
   .icons img {
     width: 30px;
     height: 30px;
-  }
-
-  footer {
-    position: relative;
-    padding: 20px 0;
   }
 }

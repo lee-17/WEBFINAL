@@ -74,7 +74,7 @@ nav a:focus {
 }
 
 .about-text {
-  color: black;
+  color: #003638;
   font-size: 27px;
   font-weight: 600;
   max-width: 500px;
@@ -104,6 +104,7 @@ nav a:focus {
   align-items: flex-start; /* Align items to the start to prevent stretching */
   flex-wrap: wrap; /* Allow service items to wrap */
   padding: 20px; /* Add padding around the services section */
+  background-color: rgb(0, 129, 167, 0.2);
 }
 
 .services h2 {
@@ -134,7 +135,7 @@ nav a:focus {
 
 .serviceitem p {
   font-size: 22px; /* Adjusted font size for better readability */
-  color: black;
+  color: #003638;
   margin: 10px 0;
 }
 
