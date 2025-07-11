@@ -1,17 +1,22 @@
+/* General Body and HTML styles */
 body {
- font-family: 'Josefin Sans', sans-serif;
- margin: 0;
- padding: 0;
- min-height: 100vh;
- background: url(images/hospital.jpg) no-repeat center fixed;
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: url(images/hospital.jpg) no-repeat center fixed;
+  background-size: cover; /* Ensure background image covers the entire viewport */
 }
 
+/* Header styles */
 header {
   background-color: #0081a7;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
+  flex-wrap: wrap; /* Allow header items to wrap on smaller screens */
+  gap: 15px; /* Add some space between items when wrapped */
 }
 
 .logo {
@@ -26,25 +31,29 @@ nav ul {
   gap: 25px;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap; /* Allow navigation items to wrap */
+  justify-content: center; /* Center nav items when wrapped */
 }
+
 nav a {
   font-family: 'Anton', sans-serif;
   font-size: 18px;
   color: white;
   text-decoration: none;
   transition: color 0.3s;
+  white-space: nowrap; /* Prevent text from breaking within nav links */
 }
 
 nav a:active {
-color: #003638;
+  color: #003638;
 }
 
 nav a:hover {
-color: #003638;
+  color: #003638;
 }
 
 nav a:focus {
-color: #003638;
+  color: #003638;
 }
 
 .pIcon img {
@@ -53,14 +62,15 @@ color: #003638;
   border-radius: 50%;
 }
 
-
+/* About Section styles */
 .about-section {
   display: flex;
+  flex-direction: row; /* Default to row layout */
   justify-content: center;
   align-items: center;
-  padding-top: 2.7cm;
-  padding-bottom: 0.5cm;
+  padding: 2.7cm 20px 0.5cm 20px; /* Adjust padding for responsiveness */
   gap: 40px;
+  flex-wrap: wrap; /* Allow content to wrap */
 }
 
 .about-text {
@@ -68,14 +78,15 @@ color: #003638;
   font-size: 27px;
   font-weight: 600;
   max-width: 500px;
+  text-align: center; /* Center text for better readability on smaller screens */
 }
 
 .about-image img {
-  max-width: 100%;
-  width: 550px;
+  max-width: 100%; /* Ensure image scales down */
+  width: 550px; /* Max width for larger screens */
   height: auto;
   border-radius: 10px;
-  margin-left: 2cm;
+  margin-left: 0; /* Remove fixed margin for responsiveness */
   box-shadow: 0 0 5px rgba(0, 129, 167, 0.3);
 }
 
@@ -85,49 +96,255 @@ color: #003638;
   margin-bottom: 15px;
 }
 
+/* Services Section styles */
+.services {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the start to prevent stretching */
+  flex-wrap: wrap; /* Allow service items to wrap */
+  padding: 20px; /* Add padding around the services section */
+}
+
+.services h2 {
+  color: #0081a7;
+  font-size: 40px;
+  width: 100%; /* Make heading take full width */
+  text-align: center; /* Center the heading */
+  margin-bottom: 30px; /* Space below the heading */
+}
+
+.serviceitem {
+  text-align: center;
+  font-size: x-large;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 129, 167, 0.3);
+  padding: 1cm 2cm;
+  width: min(100%, 450px); /* Make width responsive, max 450px */
+  margin: 1cm;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.serviceitem h2 {
+  color: #0081a7;
+  font-size: 32px; /* Slightly smaller for service item headings */
+  margin-bottom: 15px; /* Space below heading */
+}
+
+.serviceitem p {
+  font-size: 22px; /* Adjusted font size for better readability */
+  color: black;
+  margin: 10px 0;
+}
+
+.serviceitem img {
+  max-width: 100%; /* Ensure image scales down */
+  height: auto;
+  border-radius: 5%;
+  margin-left: 0; /* Remove fixed margin */
+  margin-bottom: 15px; /* Space below image */
+}
 
 .bgcolor {
-  background-color: rgb(210, 231, 248, 0.7);;
+  background-color: rgb(210, 231, 248, 0.7);
 }
 
 .names {
- font-size: 14px;
- opacity: 0.9;
- margin: 0px;
+  font-size: 14px;
+  opacity: 0.9;
+  margin: 0px;
 }
 
+/* Footer styles */
 footer {
- width: 100%;
- background-color:#0081a7;
- color: white;
- text-align: center;
- padding: 20px 0px 10px 0px;
- margin-top: 60px;
+  width: 100%;
+  background-color: #0081a7;
+  color: white;
+  text-align: center;
+  padding: 20px 0px 10px 0px;
 }
 
 footer h2 {
- font-size: 20px;
- margin: 0px;
- margin-bottom: 10px;
- font-family: 'Anton', sans-serif;
- letter-spacing: 2px;
- font-weight: 300;
+  font-size: 20px;
+  margin: 0px;
+  margin-bottom: 10px;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 2px;
+  font-weight: 300;
 }
 
 .icons {
- display: flex;
- justify-content: center;
- gap: 25px;
- margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 20px;
 }
 
 .icons img {
- width: 40px;
- height: 40px;
- object-fit: contain;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
 }
 
 footer p {
- font-size: 14px;
- opacity: 0.9;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* --- Responsive Adjustments --- */
+
+/* For screens smaller than 1024px (e.g., tablets and smaller desktops) */
+@media (max-width: 1024px) {
+  header {
+    padding: 15px 20px; /* Reduce padding */
+    flex-direction: column; /* Stack header items vertically */
+    text-align: center;
+  }
+
+  nav ul {
+    gap: 15px; /* Reduce gap between nav items */
+    margin-top: 10px; /* Add space above nav */
+  }
+
+  .about-section {
+    flex-direction: column; /* Stack about section content vertically */
+    padding-top: 1.5cm;
+    gap: 30px;
+  }
+
+  .about-text {
+    font-size: 24px; /* Slightly smaller font size */
+    max-width: 90%; /* Adjust max width */
+  }
+
+  .about-image img {
+    width: 90%; /* Make image take more width */
+    margin-left: 0; /* Ensure no left margin */
+  }
+
+  .services {
+    padding: 15px;
+  }
+
+  .serviceitem {
+    padding: 0.8cm 1.5cm; /* Adjust padding */
+    margin: 0.8cm; /* Adjust margin */
+  }
+
+  .serviceitem h2 {
+    font-size: 28px; /* Smaller heading for service items */
+  }
+
+  .serviceitem p {
+    font-size: 20px; /* Smaller paragraph text */
+  }
+}
+
+/* For screens smaller than 768px (e.g., larger mobile devices) */
+@media (max-width: 768px) {
+  header {
+    padding: 15px;
+  }
+
+  .logo {
+    font-size: 24px; /* Smaller logo font size */
+  }
+
+  nav a {
+    font-size: 16px; /* Smaller nav link font size */
+  }
+
+  .about-text h2,
+  .services h2 {
+    font-size: 32px; /* Smaller main headings */
+  }
+
+  .about-text {
+    font-size: 20px; /* Even smaller font size for about text */
+  }
+
+  .serviceitem {
+    padding: 0.5cm 1cm; /* Further adjust padding */
+    margin: 0.5cm; /* Further adjust margin */
+    width: 95%; /* Make service items take almost full width */
+  }
+
+  .serviceitem h2 {
+    font-size: 24px; /* Even smaller heading for service items */
+  }
+
+  .serviceitem p {
+    font-size: 18px; /* Even smaller paragraph text */
+  }
+}
+
+/* For screens smaller than 480px (e.g., smaller mobile devices) */
+@media (max-width: 480px) {
+  header {
+    padding: 10px;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  nav ul {
+    flex-direction: column; /* Stack nav items vertically */
+    gap: 8px; /* Smaller gap */
+  }
+
+  nav a {
+    font-size: 14px;
+    padding: 5px 0; /* Add vertical padding for touch targets */
+  }
+
+  .pIcon img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .about-section {
+    padding-top: 1cm;
+    gap: 20px;
+  }
+
+  .about-text h2,
+  .services h2 {
+    font-size: 28px; /* Smallest main headings */
+  }
+
+  .about-text {
+    font-size: 18px;
+  }
+
+  .serviceitem {
+    padding: 0.4cm 0.8cm;
+    margin: 0.4cm;
+  }
+
+  .serviceitem h2 {
+    font-size: 20px;
+  }
+
+  .serviceitem p {
+    font-size: 16px;
+  }
+
+  footer {
+    padding: 15px 0 8px 0;
+  }
+
+  footer h2 {
+    font-size: 18px;
+  }
+
+  .icons img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .names {
+    font-size: 12px;
+  }
 }
