@@ -2,7 +2,7 @@ const storedData = JSON.parse(localStorage.getItem("meditrackProfile"));
 if (storedData) {
   document.querySelector(".profile-info h2").textContent = storedData.fullname || "User";
   document.querySelector(".profile-info p:nth-child(2)").textContent = storedData.email || "N/A";
-  document.querySelector(".profile-photo").src = storedData.photoURL || "IMAGES/sample-photo.jpg";
+  document.querySelector(".profile-photo").src = storedData.photoURL || "images/angel02.png";
 
   const details = document.querySelector(".profile-details");
   details.innerHTML = `
