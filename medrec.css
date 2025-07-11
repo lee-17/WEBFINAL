@@ -107,6 +107,11 @@ nav a:active {
   color: white;
 }
 
+.active {
+  background-color: #003638;
+  color: white;
+}
+
 
 .docs {
   flex: 1;
@@ -140,10 +145,6 @@ nav a:active {
   font-size: 18px;
   color: #003638;
   line-height: 1.6;
-}
-
-.hidden {
-  display: none;
 }
 
 /* FOOTER */
