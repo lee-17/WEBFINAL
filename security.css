@@ -73,20 +73,20 @@ nav a:active {
   border-radius: 50%;
 }
 
-/* Main Container - Ensures consistent width and centering */
+/* Main Container */
 .container {
-  flex: 1; /* Allows it to grow vertically */
+  flex: 1; 
   padding: 40px;
-  max-width: 1200px; /* Adjust this to 960px if you prefer a narrower main content area */
+  max-width: 1200px; 
   width: 100%;
-  margin: auto; /* Centers the container horizontally */
+  margin: auto; 
 }
 
 /* Main container & sidebar layout */
 .main-profile-container {
   display: flex;
   gap: 30px;
-  flex: 1; /* Allows it to take available vertical space within .container */
+  flex: 1; 
 }
 
 .sidebar {
@@ -258,32 +258,32 @@ footer p {
   }
 
   .pIcon {
-    order: 2; /* Profile icon below navigation */
+    order: 2; 
     margin-top: 10px;
     justify-content: center;
     width: 100%;
   }
 
   .container {
-    padding: 20px; /* Reduced padding for mobile container */
+    padding: 20px; 
   }
 
   .main-profile-container {
-    flex-direction: column; /* Stacks sidebar and content vertically */
+    flex-direction: column; 
   }
 
   .sidebar {
     width: 100%;
-    flex-direction: row; /* Sidebar tabs in a row */
+    flex-direction: row; 
     justify-content: space-around;
     padding: 10px;
     border-radius: 0;
     box-shadow: none;
-    flex-wrap: wrap; /* Allows tabs to wrap */
+    flex-wrap: wrap; 
   }
 
   .sidebar a.tab {
-    flex: 1; /* Tabs take equal space */
+    flex: 1; 
     text-align: center;
     font-size: 13px;
     padding: 10px;
@@ -292,7 +292,7 @@ footer p {
   }
 
   .sidebar a.logout {
-    flex: none; /* Logout button is not flexible in width with tabs */
+    flex: none; 
     width: 140px;
     margin: 15px auto 0;
     border-radius: 12px;
@@ -306,7 +306,7 @@ footer p {
   }
 
   .buttons {
-    flex-direction: column; /* Buttons stack vertically */
+    flex-direction: column; 
   }
 
   .buttons button {
