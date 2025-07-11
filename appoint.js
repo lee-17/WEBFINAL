@@ -24,7 +24,7 @@ document.getElementById('apf').addEventListener('submit', function(event) {
       "Date & Time: " + appointment.datetime
     );
 
-    // Optional: reset form
+   
     event.target.reset();
   } else {
     alert("Please fill out all fields.");
