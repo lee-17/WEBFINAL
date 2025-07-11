@@ -155,13 +155,12 @@ footer {
   background-color: #0081a7;
   color: white;
   text-align: center;
-  padding: 20px 0 10px 0;
-  margin-top: auto;
-  position: relative;
+  padding: 20px 0px 10px 0px;
 }
 
 footer h2 {
   font-size: 20px;
+  margin: 0px;
   margin-bottom: 10px;
   font-family: 'Anton', sans-serif;
   letter-spacing: 2px;
@@ -185,6 +184,7 @@ footer p {
   font-size: 14px;
   opacity: 0.9;
 }
+
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
